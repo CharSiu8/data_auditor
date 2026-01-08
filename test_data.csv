@@ -1,0 +1,26 @@
+id,employee_name,join_date,performance_score,office_location
+1,Alice,2023-01-01,95,New York
+2,Bob,not_a_date,88,New York
+3,Charlie,2023-03-01,NaN,London
+4,David,2023-04-01,seventy,London
+5,Eve,05/12/2023,100,New York
+6,Frank,2023-06-01,82,Paris
+7,Grace,,77,Paris
+8,Heidi,2023-08-01,90,New York
+9,Ivan,2023-09-01,85,London
+10,Judy,2023-10-01,ERROR,Paris
+11,Kevin,2023-11-01,92,New York
+12,Liam,12-12-2023,88,London
+13,Mallory,2024-01-01,NaN,New York
+14,Niaj,invalid,79,Paris
+15,Olivia,2024-03-01,84,London
+16,Peggy,2024-04-01,91,New York
+17,Quentin,2024-05-01,83,Paris
+18,Rupert,2024-06-01,NaN,London
+19,Sybil,2024-07-01,70,New York
+20,Trent,2024-08-01,95,Paris
+21,Uma,2024-09-01,missing,London
+22,Victor,2024-10-01,88,New York
+23,Wendy,2024-11-01,92,Paris
+24,Xander,2024-12-01,80,London
+25,Yara,2025-01-01,99,New York
