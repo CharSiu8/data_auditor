@@ -46,6 +46,19 @@ def get_prompt(audit_data):
     return prompt
 
 def analyze_with_openai(json_path):
+    #Checks to see if user has provided a API KEY
+    if not os.getenv("OPENAI_API_KEY"):
+         return return """
+==============================
+ERROR: No OpenAI API key found.
+==============================
+Want to run locally instead?
+==============================
+Please either:
+1. Create a .env file and add your key as 'OPENAI_API_KEY=your-key-here'
+2. Run 'python main.py --model ollama' to use local AI instead.
+"""
+
     # 1. Open the JSON report
     try:
         with open(json_path, 'r') as f:
