@@ -2,6 +2,7 @@ import argparse
 import auditor
 import reporter
 import analyzer
+import feedback
 
 def main():
     # Parse command line arguments
@@ -29,6 +30,8 @@ def main():
     print("="*30)
     print(ai_summary)
     print("="*30)
+
+    feedback.send_feedback()
 
 if __name__ == "__main__":
     main()

@@ -48,7 +48,7 @@ def get_prompt(audit_data):
 def analyze_with_openai(json_path):
     #Checks to see if user has provided a API KEY
     if not os.getenv("OPENAI_API_KEY"):
-         return return """
+        return """
 ==============================
 ERROR: No OpenAI API key found.
 ==============================
