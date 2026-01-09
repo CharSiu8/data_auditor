@@ -14,6 +14,13 @@ Tested against the same 10K insurance dataset used in my [Insurance Claims Predi
 3. **Automation:** Built as a modular pipeline that can be integrated into automated workflows, rather than a manual "chat" interface.
 4. **Flexible AI Providers:** Choose between OpenAI (cloud) or Ollama (fully local)—enabling 100% offline operation for maximum privacy.
 
+## Installation
+```bash
+git clone https://github.com/CharSiu8/data_auditor.git
+cd data_auditor
+pip install -r requirements.txt
+```
+
 ## Quick Start
 
 ### Option A: Fully Local (No API Key Needed)
@@ -48,6 +55,7 @@ python main.py --model ollama --file your_data.csv
 | `auditor.py` | Statistical engine—performs all data quality checks locally |
 | `reporter.py` | Serializes audit results to JSON |
 | `analyzer.py` | Routes to OpenAI or Ollama for AI interpretation |
+| `feedback.py` | Sends user feedback to developer via Discord webhook |
 | `.env` | Secure storage for API keys (ignored by Git) |
 
 ### Data Flow
@@ -60,8 +68,8 @@ CSV File → auditor.py (local analysis) → reporter.py (JSON) → analyzer.py 
 - **What is sent to AI:** Only audit metadata (column names, data types, row indices with issues)—no actual data values are transmitted
 - **With Ollama:** Everything stays local—zero data leaves your machine
 
-## Validation
-Tested against the same 10K insurance dataset used in my [Insurance Claims Prediction](https://github.com/CharSiu8/insurance-claims-prediction-logistic-regression) project. The auditor correctly identified the same 982 null values in `credit_score` and 957 in `annual_mileage` that I found through manual EDA—confirming the pipeline replicates expert-level data quality checks automatically.
 
 ## Impact
 By automating the Exploratory Data Analysis (EDA) phase, this tool reduces the "Data Cleaning" bottleneck—which typically takes up 80% of a Data Scientist's time—allowing for faster, safer insights.
+## Feedback
+Built-in feedback system lets users send comments directly to the developer. Help improve VaultLens by sharing your experience after running an audit.
