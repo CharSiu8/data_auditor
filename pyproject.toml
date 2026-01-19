@@ -12,7 +12,7 @@ authors = [
 description = "Vault_Lens lets you run private datasets locally and gives Ollama a lens to see in the vault. Raw data is never touched by the llm."
 readme = "README.md"
 requires-python = ">=3.7"
-license = { text = "MIT" }
+license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",

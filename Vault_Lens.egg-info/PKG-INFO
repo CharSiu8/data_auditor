@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: Vault_Lens
-Version: 0.1.0
+Version: 0.1.3
 Summary: Vault_Lens lets you run private datasets locally and gives Ollama a lens to see in the vault. Raw data is never touched by the llm.
 Author-email: Steven Polino <stpolino@gmail.com>
 License: MIT
