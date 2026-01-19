@@ -1,6 +1,5 @@
 .env
 __pycache__/
-*.csv
 .DS_Store
 audit_summary.json
 .venv/
