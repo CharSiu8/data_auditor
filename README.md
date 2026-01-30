@@ -1,6 +1,10 @@
 # VaultLens: Privacy-First Automated Data EDA Observability 
-All Rights Reserved - Only Recruiters, Employers, and those who request access are permitted to use/test
 
+Privacy-first EDA for regulated and sensitive data 
+
+- NOT PII/SPI/HIPPA/GDOR Compliant yet. see Notes on Complaince section.
+
+All Rights Reserved - Only Recruiters, Employers, and those who request access are permitted to use/test
 ## Quick Start
 
 **Install:**
@@ -53,9 +57,29 @@ To ensure privacy and performance, VaultLens requires:
 * **Ollama:** For local AI analysis (recommended for private data)
 * **Key Dependencies:** `pandas`, `openai`, `requests`, `python-dotenv`.
 
+## Notes on COMPLIANCE
+
+VaultLens is designed for privacy-focused data analysis but is **not certified for compliance** with HIPAA, GDPR, PCI DSS, or other regulatory frameworks. 
+
+**For regulated data (PHI, PII, financial records):** Consult your organization's compliance team before use. The author assumes no liability for regulatory violations.
+
+**Use at your own risk.**
+
+Privacy capabilities of Vault Lens 1.0 inlcude;
+-Raw data never sent to external APIs
+-Only statistical summaries processed by LLM
+-Local processing with Ollama option
+
+BUT IT DOES NOT YET HAVE 
+- encrypotion at rest
+- data retention policy
+- BAA
+- ollama model security
+- access controls
+  
 ## License
 
-© 2026 Steven Polino — All Rights Reserved
+© 2026 Steven Polino — All Rights Reserved - Stpolino@gmail.com
 
 Recruiters/employers welcome to clone and test for evaluation purposes.
 
