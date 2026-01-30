@@ -2,7 +2,7 @@
 
 Privacy-first EDA for regulated and sensitive data 
 
-- NOT PII/SPI/HIPPA/GDOR Compliant yet. see Notes on Complaince section.
+- NOT PII/SPI/HIPPA/GDOR Compliant yet. see Notes on Compliance section.
 
 All Rights Reserved - Only Recruiters, Employers, and those who request access are permitted to use/test
 ## Quick Start
