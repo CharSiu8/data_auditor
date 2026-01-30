@@ -1,11 +1,17 @@
 # VaultLens: Privacy-First Automated Data Observability
 
 Try it now: 
+
 pip install vault-lens
+
 pip install -e
+
 add your API Key to a .env file as OPENAI_API_KEY
+
 python vaultlens/main.py --file test_data.csv
+
 OR WITH OLLAMA
+
 python vaultlens/main.py --file test_data.csv --model ollama
 
 ## The Business Value
